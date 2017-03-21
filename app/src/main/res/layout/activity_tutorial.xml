@@ -27,9 +27,13 @@
             android:text="Czytaj książki"/>
 
     </LinearLayout>
+
     <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="Ok, dalej!"
-        android:onClick="onNextClick"/>
+        android:text="Ok!"
+        android:onClick="OnNextClick"
+        />
+
+
 </LinearLayout>

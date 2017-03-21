@@ -13,12 +13,21 @@ import com.ps.bookweb.R;
 
 public class TutorialActivity extends ActionBarActivity {
 
+    //wskazanie aktywności żeby korzystała z odpowiedniego layotu
+    //trzeba nadpisać metodę onCreate
+
+    //nadpisanie metody, wywołanie metody rodzica
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+    //trzeba ustawić widok naszej aktywności i podać nazwę layoutu
         setContentView(R.layout.activity_tutorial);
+
     }
 
-    public void onNextClick(View view) {
+    //wygenerowane przez ALT+enter(do stworzenia eventu) z activity_tutorial.xml na nazwie metody która ma być
+    //wywołana po wciśnięciu przycisku
+    public void OnNextClick(View view) {
     }
 }
