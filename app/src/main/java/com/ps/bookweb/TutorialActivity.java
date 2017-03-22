@@ -1,5 +1,6 @@
 package com.ps.bookweb;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBarActivity;
@@ -23,11 +24,14 @@ public class TutorialActivity extends ActionBarActivity {
 
     //trzeba ustawić widok naszej aktywności i podać nazwę layoutu
         setContentView(R.layout.activity_tutorial);
-
     }
 
     //wygenerowane przez ALT+enter(do stworzenia eventu) z activity_tutorial.xml na nazwie metody która ma być
     //wywołana po wciśnięciu przycisku
     public void OnNextClick(View view) {
+
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
+
     }
 }

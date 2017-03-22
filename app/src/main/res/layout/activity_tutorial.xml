@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
@@ -28,12 +30,24 @@
 
     </LinearLayout>
 
-    <Button
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Ok!"
-        android:onClick="OnNextClick"
-        />
+        android:orientation="horizontal">
 
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Ok!"
+            android:onClick="OnNextClick" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anuluj"
+            />
+
+    </LinearLayout>
 </LinearLayout>
