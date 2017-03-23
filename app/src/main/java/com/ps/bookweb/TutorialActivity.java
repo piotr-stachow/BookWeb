@@ -14,9 +14,7 @@ import com.ps.bookweb.R;
 
 public class TutorialActivity extends ActionBarActivity {
 
-    //wskazanie aktywności żeby korzystała z odpowiedniego layotu
-    //trzeba nadpisać metodę onCreate
-
+    //wskazanie aktywności żeby korzystała z odpowiedniego layotu, trzeba nadpisać metodę onCreate
     //nadpisanie metody, wywołanie metody rodzica
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -26,12 +24,17 @@ public class TutorialActivity extends ActionBarActivity {
         setContentView(R.layout.activity_tutorial);
     }
 
-    //wygenerowane przez ALT+enter(do stworzenia eventu) z activity_tutorial.xml na nazwie metody która ma być
-    //wywołana po wciśnięciu przycisku
+    //wygenerowane przez ALT+enter na nazwie metody która ma być
+    //wywołana po wciśnięciu przycisku (do stworzenia eventu) z activity_tutorial.xml
     public void OnNextClick(View view) {
 
-        Intent intent = new Intent(this, AboutActivity.class);
-        startActivity(intent);
+        //intent - czyli zamiar uruchomienia nowej aktywności, tworzymy nowy obiektu klasy Intent
+        // zainicjowanie obiektu (new) poprzez wywołanie konstruktora Intent
+        //this (czyli nasza klasa) - oznacza z jakiego kontekstu będzie uruchamiana nasza nowa aktywność
+        // i uruchamiamy nową aktywność - nazawa aktywności - AboutActivity, parametrem jest intent1
+
+        Intent intent1 = new Intent(this, AboutActivity.class);
+        startActivity(intent1);
 
     }
 }
