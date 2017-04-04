@@ -33,7 +33,7 @@ public class TutorialActivity extends ActionBarActivity {
         //this (czyli nasza klasa) - oznacza z jakiego kontekstu będzie uruchamiana nasza nowa aktywność
         // i uruchamiamy nową aktywność - nazawa aktywności - AboutActivity, parametrem jest intent1
 
-        Intent intent1 = new Intent(this, AboutActivity.class);
+        Intent intent1 = new Intent(this, HomeActivity.class);
         startActivity(intent1);
 
     }
