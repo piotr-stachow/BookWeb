@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_gravity="center"
-            android:text="Czytaj książki"/>
+            android:text="@string/textview_1"/>
 
     </LinearLayout>
 

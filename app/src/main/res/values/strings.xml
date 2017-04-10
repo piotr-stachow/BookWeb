@@ -4,6 +4,7 @@
 <resources>
 
     <!-- activity_tutorial -->
+    <string name="title_activity_tutorial">Tutorial</string>
     <string name="powitanie">Witaj świecie</string>
 
     <string name="app_name">BookWeb</string>
@@ -19,7 +20,13 @@
     <!-- ikona hamburgera, pojawi się w lewym górnym rogu Toolbara, po kliknięciu wysunie menu nawigacji -->
     <string name="navigation_drawer_open">Otwórz navigation drawer</string>
     <string name="navigation_drawer_close">Zamknij navigation drawer</string>
+    <string name="textview_1">Czytaj książki</string>
 
+    <!-- menu activity_home_drawer -->
+    <string name="menutemp_a">Temperatura interfejs A</string>
+    <string name="menutemp_b">Temperatura interfejs B</string>
+    <string name="menuinne">Inne</string>
+    <string name="o_programie">O programie</string>
 
 
 </resources>
