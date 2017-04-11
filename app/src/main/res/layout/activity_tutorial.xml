@@ -40,13 +40,13 @@
         <Button
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="Ok!"
+            android:text="@string/button_tutorial_ok"
             android:onClick="OnNextClick" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Anuluj"
+            android:text="@string/button_tutorial_anuluj"
             />
 
     </LinearLayout>

@@ -6,6 +6,8 @@
     <!-- activity_tutorial -->
     <string name="title_activity_tutorial">Tutorial</string>
     <string name="powitanie">Witaj świecie</string>
+    <string name="button_tutorial_ok">Ok!</string>
+    <string name="button_tutorial_anuluj">Anuluj</string>
 
     <string name="app_name">BookWeb</string>
     <string name="title_activity_about">AboutActivity</string>
@@ -22,11 +24,15 @@
     <string name="navigation_drawer_close">Zamknij navigation drawer</string>
     <string name="textview_1">Czytaj książki</string>
 
-    <!-- menu activity_home_drawer -->
+    <!-- menu nawigacyjne activity_home_drawer -->
     <string name="menutemp_a">Temperatura interfejs A</string>
     <string name="menutemp_b">Temperatura interfejs B</string>
     <string name="menuinne">Inne</string>
-    <string name="o_programie">O programie</string>
+
+    <!-- menu pasek górny aktywności Home -->
+    <string name="menu_gorne1">O programie</string>
+    <string name="menu_gorne2">Skaner</string>
+    <string name="menu_gorne3">Szukaj</string>
 
 
 </resources>
