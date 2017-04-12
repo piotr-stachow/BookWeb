@@ -11,14 +11,12 @@
         android:id="@+id/searchEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Wyszukiwana fraza"
-        />
+        android:hint="Wyszukiwana fraza" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Wyszukaj"
-        android:onClick="onSearchClick"
-        />
+        android:onClick="onSearchClick" />
 
 </LinearLayout>
