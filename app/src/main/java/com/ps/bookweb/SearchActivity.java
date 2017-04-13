@@ -1,5 +1,8 @@
 package com.ps.bookweb;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,7 +35,9 @@ public class SearchActivity extends AppCompatActivity {
 
     }
 
+
     public void onSearchClick(View view) {
+
         /*
             mały komunikat
             wyświetlenie tekstu z pola po wciśnięciu przycisku Search
@@ -43,9 +48,8 @@ public class SearchActivity extends AppCompatActivity {
             .show() - wyświetlić
 
         */
-        Toast.makeText(this, searchEditText.getText().toString(), Toast.LENGTH_SHORT).show();
-
-
+        Toast.makeText(this, searchEditText.getText().toString(), Toast.LENGTH_LONG).show();
     }
+
 
 }

@@ -3,9 +3,9 @@
 
 <resources>
 
-    <!-- activity_tutorial -->
-    <string name="title_activity_tutorial">Tutorial</string>
-    <string name="powitanie">Witaj świecie</string>
+    <!-- activity_konfig_itps -->
+    <string name="title_activity_konfig_itps">KonfigIT - PS</string>
+    <string name="powitanie">Panel administracyjny</string>
     <string name="button_tutorial_ok">Ok!</string>
     <string name="button_tutorial_anuluj">Anuluj</string>
 
