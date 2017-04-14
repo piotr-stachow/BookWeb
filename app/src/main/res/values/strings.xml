@@ -4,10 +4,12 @@
 <resources>
 
     <!-- activity_konfig_itps -->
-    <string name="title_activity_konfig_itps">KonfigIT - PS</string>
+    <string name="title_activity_konfigitps">KonfigIT - PS</string>
     <string name="powitanie">Panel administracyjny</string>
     <string name="button_tutorial_ok">Ok!</string>
     <string name="button_tutorial_anuluj">Anuluj</string>
+    <string name="textview_1">Urządzenia - linki</string>
+    <string name="textview_link1">http://5.185.122.9</string>
 
     <string name="app_name">BookWeb</string>
     <string name="title_activity_about">AboutActivity</string>
@@ -16,13 +18,13 @@
     <string name="title_activity_main">MainActivity</string>
 
 
-    <!-- home_activity -->
+    <!-- networkconfig_activity -->
     <string name="nazwa_menu">Home Menu</string>
 
     <!-- ikona hamburgera, pojawi się w lewym górnym rogu Toolbara, po kliknięciu wysunie menu nawigacji -->
     <string name="navigation_drawer_open">Otwórz navigation drawer</string>
     <string name="navigation_drawer_close">Zamknij navigation drawer</string>
-    <string name="textview_1">Czytaj książki</string>
+
 
     <!-- menu nawigacyjne activity_home_drawer -->
     <string name="menutemp_a">Temperatura interfejs A</string>
@@ -33,6 +35,10 @@
     <string name="menu_gorne1">O programie</string>
     <string name="menu_gorne2">Skaner</string>
     <string name="menu_gorne3">Szukaj</string>
+
+    <string name="link1">http://5.185.122.9</string>
+    <string name="link2">http://5.185.122.9:8888</string>
+    <string name="link3">http://5.185.122.9:8000</string>
 
 
 </resources>

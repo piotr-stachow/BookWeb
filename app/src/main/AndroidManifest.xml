@@ -11,20 +11,21 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".KonfigITPSActivity"
-            android:label="@string/title_activity_portForwarding">
-            //żeby aktywność była domyślna - filtr intentów
-            //aktywności które rozumieją kategorię LAUNCHER (czyli nasza główna aplikacja na
-            pulpicie)
-            //będzie wyświetlała link do TutorialActivity
+            android:label="@string/title_activity_konfigitps">
+            /*
+                żeby aktywność była domyślna - filtr intentów
+                aktywności które rozumieją kategorię LAUNCHER (czyli nasza główna aplikacja na pulpicie)
+                będzie wyświetlała link do TutorialActivity
+            */
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".AboutActivity" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".NetworkConfigActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SearchActivity"></activity>

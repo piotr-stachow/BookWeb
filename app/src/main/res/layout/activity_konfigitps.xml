@@ -11,15 +11,23 @@
         android:text="@string/powitanie"
         android:layout_margin="5dp"
         android:gravity="center"
-        android:textSize="30sp"/>
+        android:textSize="15sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            >
+        <!--
         <ImageView android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_library_books_indigo_a200_48dp"/>
+        -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_list_indigo_400_24dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -29,6 +37,38 @@
             android:text="@string/textview_1"/>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_right_indigo_400_24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:text="@string/textview_link1"
+            android:autoLink="web"
+            />
+
+        <ListView
+            android:id="@+id/listView1_linki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+
+
+
+    </LinearLayout>
+
 
 
     
