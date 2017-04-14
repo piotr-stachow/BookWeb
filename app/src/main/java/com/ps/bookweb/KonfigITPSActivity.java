@@ -41,8 +41,10 @@ public class KonfigITPSActivity extends ActionBarActivity {
         i uruchamiamy nową aktywność - nazawa aktywności - AboutActivity, parametrem jest intent1
         */
 
-        //przechwytujemy referencję do widoku listowego
-        //i tworzymy obiekt listy tablicowej i przypisujemy mu naszą tablicę
+        przechwytujemy referencję do widoku listowego
+        i tworzymy obiekt listy tablicowej i przypisujemy mu naszą tablicę
+        */
+
         ListView listViewLinki = (ListView) findViewById(R.id.listView1_linki);
 
         String linki[] = {
