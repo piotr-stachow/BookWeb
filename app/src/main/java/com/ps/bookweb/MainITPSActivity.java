@@ -1,6 +1,8 @@
 package com.ps.bookweb;
 
+import android.app.AlertDialog;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBarActivity;
@@ -17,13 +19,14 @@ import java.util.Arrays;
 
 public class MainITPSActivity extends ActionBarActivity {
 
-    //wskazanie aktywności żeby korzystała z odpowiedniego layotu, trzeba nadpisać metodę onCreate
-    //nadpisanie metody, wywołanie metody rodzica
+    /*
+    : wskazanie aktywności żeby korzystała z odpowiedniego layotu, trzeba nadpisać metodę onCreate
+    : nadpisanie metody, wywołanie metody rodzica
+    : trzeba ustawić widok naszej aktywności i podać nazwę layoutu
+    */
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        //trzeba ustawić widok naszej aktywności i podać nazwę layoutu
         setContentView(R.layout.activity_mainitps);
 
         /*
@@ -39,6 +42,10 @@ public class MainITPSActivity extends ActionBarActivity {
 
         ArrayAdapter adapter;
         ListView listViewLinki = (ListView) findViewById(R.id.listView1_linki);
+
+        pobierzLinki();
+        initLinkiListView();
+        /*
         String linki[] = {
                 getString(R.string.link1),
                 getString(R.string.link2),
@@ -46,18 +53,41 @@ public class MainITPSActivity extends ActionBarActivity {
                 getString(R.string.link4)
         };
 
-        /*
         : ArrayList - tworzymy obiekt listy tablicowej i przypisujemy mu naszą tablicę z linkami
         : Arrays.asList() - zwraca listową reprezentację tablicy
-         */
 
         ArrayList linkiArray = new ArrayList();
-        linkiArray.addAll( Arrays.asList(linki));
-        adapter = new ArrayAdapter(this, R.layout.row_networkconfig, linkiArray);
-        listViewLinki.setAdapter(adapter);
-
-
+        linkiArray.addAll(Arrays.asList(linki));
+        */
+        //adapter = new ArrayAdapter(this, R.layout.element_listview, linkiArray);
+        //listViewLinki.setAdapter(adapter);
     }
+
+    private void pobierzLinki(){
+        /*
+        : POBIERANIE DANYCH z /res/values/strings.xml
+        : odbywa się to poprzez obiekt Resources, który wewnątrz klasy Aktywności można pobrać
+        : za pomocą getResources(). Metoda ta zawraca obiekt dający nam dostęp do wszystkich zasobów
+        : folderu /res/ naszej aplikacji.
+
+        : elementy zasobów naszej aplikacji pobieramy za pomocą metod get…(int). Zwracają one element,
+        : na którego ID wskazują pola statyczne automatycznie generowanej klasy R. My korzystamy
+        : z metody getStringArray(int)
+        */
+
+        Resources dane = getResources();
+        String[] linki = dane.getStringArray(R.array.lista_linkow);
+    }
+
+
+    private void initLinkiListView() {
+
+        listViewLinki.setAdapter(new ArrayAdapter<String>(
+                getApplicationContext(),
+                R.layout.element_listview,
+                linki));
+    }
+
 
     //wygenerowane przez ALT+enter na nazwie metody która ma być
     //wywołana po wciśnięciu przycisku (do stworzenia eventu) z activity_tutorial.xml

@@ -12,7 +12,7 @@
 
         <activity
             android:name=".MainITPSActivity"
-            android:label="@string/title_activity_konfigitps">
+            android:label="@string/title_activity_mainitps">
             /*
                 żeby aktywność była domyślna - filtr intentów
                 aktywności które rozumieją kategorię LAUNCHER (czyli nasza główna aplikacja na pulpicie)
