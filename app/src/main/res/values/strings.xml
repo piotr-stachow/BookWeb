@@ -36,13 +36,6 @@
     <string name="menu_gorne2">Skaner</string>
     <string name="menu_gorne3">Szukaj</string>
 
-    <string name="link1">http://5.185.122.9</string>
-    <string name="link2">http://5.185.122.9:8888</string>
-    <string name="link3">http://5.185.122.9:8000</string>
-    <string name="link4">http://5.185.122.9:8128</string>
-
-
-
     <string-array name="lista_linkow">
         <item>http://5.185.122.9</item>
         <item>http://5.185.122.9:8888</item>

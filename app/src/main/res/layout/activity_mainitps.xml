@@ -48,7 +48,7 @@
             android:src="@drawable/ic_keyboard_arrow_right_indigo_400_24dp"/>
 
         <ListView
-            android:id="@+id/listView1_linki"
+            android:id="@+id/listView_linki"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </ListView>
