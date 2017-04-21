@@ -86,8 +86,14 @@ public class MainITPSActivity extends ActionBarActivity {
         : w którym przechowywane są domyślne layouty, dostarczone wraz z systemem Android),
         : - tablicę napisów, którą wcześniej pobraliśmy z zasobów naszej aplikacji.
         */
-        adapter = new ArrayAdapter(getApplicationContext(), R.layout.element_listview, linki);
+        adapter = new ArrayAdapter(this, R.layout.element_listview, linki);
         listView_linki.setAdapter(adapter);
+
+        /*
+            Nie należy używać getApplicationContext() zamiast "this", ponieważ otrzymamy błąd
+            "Calling startActivity() from outside of an Activity  context requires the FLAG_ACTIVITY_NEW_TASK flag."
+            W takiej sytuacji nie będą działały linki
+        */
     }
 
 
